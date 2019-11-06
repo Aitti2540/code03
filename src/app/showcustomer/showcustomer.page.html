@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ข้อมูลนิสิต</ion-title>
+    <ion-buttons slot="primary">
+    	<ion-back-button text="Back" icon="" color="tertiary" fill="outline"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-card>
+	  <ion-card-header>
+
+	  	<a href="http://www.google.com" taget="_top"><img class="photo" src="/assets/โปรไฟล์.png" alt="" style="width:70px;"/></a>
+		
+		<img class="photo" src="/assets/ข้อความ.png" alt="" style="width:70px;"/>
+
+		<img class="photo" src="/assets/ตารางเรียน.png" alt="" style="width:70px;"/>
+
+		<img class="photo" src="/assets/ตารางสอบ.png" alt="" style="width:70px;"/>
+
+		<img class="photo" src="/assets/ผลการเรียน.png" alt="" style="width:90px;"/>
+
+	    <ion-card-subtitle>ข้อมูลนิสิต</ion-card-subtitle>
+	    <ion-card-title>{{name_customer}}</ion-card-title>
+	  </ion-card-header>
+
+	  <ion-card-content>
+	  	<h3>ชื่อ : </h3>
+		<h3>นามสกุล : </h3>
+		<h3>รหัสนิสิต : </h3>
+		<h3>คณะ : </h3>
+		<h3>สาขาวิชา : </h3>
+		<h3>ระดับ : </h3>
+	    {{desc_customer}}
+	  </ion-card-content>
+	</ion-card>
+</ion-content>

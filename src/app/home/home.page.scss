@@ -1,1 +1,76 @@
+.item{
+ 
+    display:block;
+    background-color: transparent;
+    border: 3px solid transparent;
+    margin-right: 10px;
+    margin-bottom: none;
+    float:left;
+  
+  }
+  
+  #index-gallery{
+    margin-left: 35px;
+    width:auto;
+  
+  }
+  
+  .zoom {
+    transition: transform .2s; /* Animation */
+    width: 70px;
+    margin: 0 auto;
+  }
+  .p{ 
+    margin-left: 15px;
+    border: none;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  
+  
+.bar{
+  width: 10cm;
+  font-size: 25px;
+  height: 1.5cm;
+  text-align: center;
+ 
+}
+.bar1{
+  width: 10cm;
+  font-size: 25px;
+  height: 0.75cm;
+  margin-top: 7%;
+  font-size: 20px;
+}
+.icon1{
+  width: 0.80cm;
+  height: 0.80cm;
+  margin-top: -1%;
+  margin-left: 0.5%;
+}
+.tbr{
+  font-size: 15px;
+  margin-top: -2.5%;
+  color:#fff;
+}
+.img{
+  width: 2cm;
+  margin-left: 9%;
+  margin-top: 10%;
 
+}
+.text{
+  font-size: 15px;
+  margin-top: -2.5%;
+}
+.text1{
+  font-size: 15px;
+  margin-top: -2.5%;
+  margin-left: 15%;
+}
+.block{
+  width: 10cm;
+  height: 5cm;
+}

@@ -1,0 +1,51 @@
+<!--FIX CSP-->
+<head>
+	<meta http-equiv="Content-Security-Policy"
+		Content-Security-Policy "style-src 'self'; script-src https://www.google-analytics 'self' data: blob: https:; img-src 'self' data: https:; font-src 'self' https: data: blob:; media-src 'self' https: data: blob:; connect-src 'self' https:; object-src 'none';"
+		X-Frame-Options        SAMEORIGIN
+		X-Content-Type-Options nosniff
+		X-XSS-Protection       "1; mode=block"
+	>
+	</head>
+	
+	
+	<ion-header>
+	  <ion-toolbar color="tertiary" class="bar">
+		<ion-title text = 'center'><B> เข้าสู่ระบบ</B></ion-title>
+		
+	  </ion-toolbar>
+	  
+	</ion-header>
+	
+	<ion-content padding>
+	
+	<ion-content>
+	<style>
+	#center {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
+	}
+	</style>
+	
+		<ion-list>
+	<img class="photo" id="center" src="/assets/UPLogo.png" alt="" style="width:160px;"/>
+		  <ion-item>
+			<ion-label position="floating">ชื่อผู้ใช้ (Username)</ion-label>
+			<ion-input type="text" placeholder="รหัสนิสิต@up.ac.th" autofocus required [(ngModel)]="username"></ion-input>
+		  </ion-item>
+	
+		  <ion-item>
+			<ion-label position="floating">รหัสผ่าน (Password)</ion-label>
+			<ion-input type="password" placeholder="รหัสผ่าน" required [(ngModel)]="password"></ion-input>
+		  </ion-item>
+	
+		</ion-list>
+	
+		<div>
+		  <ion-button expand="block" padding color="tertiary" (click)="prosesLogin()">ยืนยัน</ion-button>
+		</div>
+	</ion-content>
+	
+	
